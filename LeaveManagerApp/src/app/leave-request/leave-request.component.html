@@ -1,0 +1,48 @@
+<form [formGroup]="requestForm" (submit)="apply()" class="leaverequest-form">
+    <div>
+        <div class="mat-title">Apply Leave Request</div>        
+        <section>
+            <mat-form-field hideRequiredMarker>
+                <mat-label>Leave type</mat-label>
+                <mat-select formControlName="type" required>
+                    <mat-option value="Earned" selected>Earned</mat-option>
+                    <mat-option value="Casual">Casual</mat-option>
+                </mat-select>
+                <mat-error *ngIf="requestForm.controls.type.touched && requestForm.controls.type.invalid">
+                    <span *ngIf="requestForm.controls.type.errors.required">Leave type is required</span>
+                </mat-error>
+            </mat-form-field>
+        </section>
+        <div>
+            <mat-form-field hideRequiredMarker> 
+                <mat-label>From Date</mat-label>
+                <input matInput [min]="minDate" [matDatepickerFilter]="weekendFilter" [matDatepicker]="datePicker1" formControlName="fromDate" required>
+                <mat-datepicker-toggle [for]="datePicker1" matSuffix></mat-datepicker-toggle>
+                <mat-datepicker #datePicker1></mat-datepicker>
+                <mat-error *ngIf="requestForm.controls.fromDate.touched && requestForm.controls.fromDate.invalid">
+                    <span *ngIf="requestForm.controls.fromDate.errors.required">From date is required</span>
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field hideRequiredMarker>
+                <mat-label>To Date</mat-label>
+                <input matInput [min]="minDate" [matDatepickerFilter]="weekendFilter" [matDatepicker]="datePicker2" formControlName="toDate" required>
+                <mat-datepicker-toggle [for]="datePicker2" matSuffix></mat-datepicker-toggle>
+                <mat-datepicker #datePicker2></mat-datepicker>
+                <mat-error *ngIf="requestForm.controls.toDate.touched && requestForm.controls.toDate.invalid">
+                    <span *ngIf="requestForm.controls.toDate.errors.required">To date is required</span>
+                </mat-error>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field class="example-full-width" hideRequiredMarker>
+                <mat-label>Reason</mat-label>
+                <textarea matInput formControlName="reason" required></textarea>
+                <mat-error *ngIf="requestForm.controls.reason.touched && requestForm.controls.reason.invalid">
+                    <span *ngIf="requestForm.controls.reason.errors.required">Reason for leave is required</span>
+                </mat-error>
+            </mat-form-field>
+        </div>        
+    </div>
+    <button mat-raised-button color="primary" type="submit">Apply</button> <button mat-stroked-button [routerLink]="['/dashboard']" color="primary">Cancel</button>
+</form>
+

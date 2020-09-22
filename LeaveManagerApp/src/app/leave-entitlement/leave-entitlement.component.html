@@ -1,0 +1,24 @@
+<form [formGroup]="entitlementForm" (submit)="addPolicy()" class="leave-entitlement-form">
+    <div>
+        <div class="mat-title">Leave entitlement</div>
+        <div>
+            <mat-form-field color="primary" hideRequiredMarker>
+                <mat-label>Total Casual Leaves</mat-label>
+                <input type="number" min="0" matInput formControlName="totalCasualLeaves" required > 
+                <mat-error *ngIf="entitlementForm.controls.totalCasualLeaves.touched && entitlementForm.controls.totalCasualLeaves.invalid">
+                    <span *ngIf="entitlementForm.controls.totalCasualLeaves.errors.required">Enter a password</span>
+                </mat-error>
+            </mat-form-field> 
+        </div>
+        <div>
+            <mat-form-field color="primary" hideRequiredMarker>
+                <mat-label>Total Earned Leaves</mat-label>
+                <input type="number" min="0" matInput formControlName="totalEarnedLeaves" required>
+                <mat-error *ngIf="entitlementForm.controls.totalEarnedLeaves.touched && entitlementForm.controls.totalEarnedLeaves.invalid">
+                    <span *ngIf="entitlementForm.controls.totalEarnedLeaves.errors.required">Enter a password</span>
+                </mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+    <button mat-raised-button color="primary" type="submit">Update</button> <button mat-stroked-button [routerLink]="['/dashboard']" color="primary">Cancel</button><br>
+</form>

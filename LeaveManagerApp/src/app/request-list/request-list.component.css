@@ -1,0 +1,48 @@
+mat-expansion-panel {
+    margin: 1rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.mat-headline{
+    padding: 5rem;
+    position: relative;
+    left: 50%;
+    display: inline-block;       
+    transform: translate(-50%);
+}
+
+.mat-title {
+    margin-left: 2rem;
+}
+
+#title{
+    margin-top: 4rem;
+    margin-left: 6rem;
+}
+
+.btn-approve {
+    background-color: #3de05b;
+    color: #fff;
+}
+
+.btn-reject {
+    color: #fff;
+    background-color: #e0403d;
+}
+
+mat-icon {
+    padding-right: 1rem;
+}
+
+.panel-body {
+    justify-content: space-between;
+    display: inline-block;
+}
+
+#dashboardBtn{
+    position: relative;
+    left: 50%;
+    display: inline-block;       
+    transform: translate(-50%);
+}

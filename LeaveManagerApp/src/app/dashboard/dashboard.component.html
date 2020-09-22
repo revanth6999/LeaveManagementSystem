@@ -1,0 +1,36 @@
+<div class="mat-title">Dashboard</div>
+<mat-grid-list cols="3">
+    <mat-grid-tile *ngIf="!user.isManager">
+        <mat-card class="dashboard-card">
+            <mat-card-header>
+                <mat-card-title>Your available leaves</mat-card-title>
+                <mat-card-subtitle>Employee ID: {{user.id}}</mat-card-subtitle>
+            </mat-card-header>
+    
+            <mat-card-content>
+                <div class="mat-subheading-2">Earned leaves </div><div class="mat-display-1"><strong>{{availableEarnedLeaves}}</strong></div><br><br>
+                <div class="mat-subheading-2">Casual leaves </div><div class="mat-display-1"><strong>{{availableCasualLeaves}}</strong></div>
+            </mat-card-content>
+            <mat-card-actions>
+                <button [routerLink]="['/leave/new']" mat-stroked-button color="primary">Apply leave request</button>
+            </mat-card-actions>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="dashboard-card">
+            <mat-card-header>
+                <mat-card-title>Current policy</mat-card-title>
+                <mat-card-subtitle>Updated on: {{totalLeave.updateDateTime}}</mat-card-subtitle>
+            </mat-card-header>
+    
+            <mat-card-content>
+                <div class="mat-subheading-2">Total Earned leaves </div><div class="mat-display-1"><strong>{{totalLeave.totalEarnedLeaves}}</strong></div><br><br>
+                <div class="mat-subheading-2">Total Casual leaves </div><div class="mat-display-1"><strong>{{totalLeave.totalCasualLeaves}}</strong></div>
+            </mat-card-content>
+            <mat-card-actions>
+                <button *ngIf="!user.isManager" [routerLink]="['/history']" mat-raised-button color="primary">Check leave history</button>
+                <button *ngIf="user.isManager" [routerLink]="['/entitlement']" mat-raised-button color="primary">Update</button>
+            </mat-card-actions>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>

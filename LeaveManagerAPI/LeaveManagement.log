@@ -1,0 +1,40 @@
+***************************************************** LeaveManagement LOG **************************************************
+
+NLR - NEW LEAVE REQUEST
+LRSU - LEAVE REQUEST STATUS UPDATE
+
+----------------------------------------------------------------------------------------------------------------------------
+
+20-09-2020 10:30:17  NLR	: E-ID: 2, Type: Earned, From: 20/09/2020, To: 29/09/2020
+20-09-2020 10:30:56  LRSU	: ID: 46, E-ID: 2, M-ID: 1, Type: Earned, From: 20/09/2020, To: 29/09/2020, Status: Approved
+20-09-2020 10:32:54  NLR	: E-ID: 2, Type: Casual, From: 30/09/2020, To: 30/09/2020
+20-09-2020 12:04:48  NLR	: E-ID: 6, Type: Earned, From: 22/09/2020, To: 23/09/2020
+20-09-2020 12:05:35  NLR	: E-ID: 6, Type: Casual, From: 25/09/2020, To: 27/09/2020
+20-09-2020 12:06:06  LRSU	: ID: 48, E-ID: 6, M-ID: 5, Type: Earned, From: 22/09/2020, To: 23/09/2020, Status: Approved
+20-09-2020 12:06:09  LRSU	: ID: 49, E-ID: 6, M-ID: 5, Type: Casual, From: 25/09/2020, To: 27/09/2020, Status: Approved
+20-09-2020 12:17:50  NLR	: E-ID: 2, Type: Casual, From: 30/09/2020, To: 30/09/2020
+20-09-2020 12:19:04  LRSU	: ID: 50, E-ID: 2, M-ID: 1, Type: Casual, From: 30/09/2020, To: 30/09/2020, Status: Approved
+20-09-2020 14:21:17  NLR	: E-ID: 4, Type: Earned, From: 23/09/2020, To: 23/09/2020
+20-09-2020 14:38:57  NLR	: E-ID: 4, Type: Earned, From: 25/09/2020, To: 28/09/2020
+20-09-2020 14:40:56  LRSU	: ID: 52, E-ID: 4, M-ID: 1, Type: Earned, From: 25/09/2020, To: 28/09/2020, Status: Approved
+20-09-2020 14:46:15  NLR	: E-ID: 4, Type: Earned, From: 25/09/2020, To: 25/09/2020
+20-09-2020 14:47:02  LRSU	: ID: 53, E-ID: 4, M-ID: 1, Type: Earned, From: 25/09/2020, To: 25/09/2020, Status: Approved
+20-09-2020 14:50:06  NLR	: E-ID: 4, Type: Casual, From: 02/10/2020, To: 05/10/2020
+20-09-2020 14:50:14  LRSU	: ID: 54, E-ID: 4, M-ID: 1, Type: Casual, From: 02/10/2020, To: 05/10/2020, Status: Approved
+20-09-2020 14:55:22  NLR	: E-ID: 4, Type: Earned, From: 08/10/2020, To: 15/10/2020
+20-09-2020 14:55:33  LRSU	: ID: 55, E-ID: 4, M-ID: 1, Type: Earned, From: 08/10/2020, To: 15/10/2020, Status: Approved
+20-09-2020 14:58:19  NLR	: E-ID: 4, Type: Casual, From: 21/09/2020, To: 29/09/2020
+20-09-2020 14:58:54  LRSU	: ID: 56, E-ID: 4, M-ID: 1, Type: Casual, From: 21/09/2020, To: 29/09/2020, Status: Rejected
+20-09-2020 23:08:40  NLR	: E-ID: 7, Type: Casual, From: 21/09/2020, To: 21/09/2020
+20-09-2020 23:09:12  LRSU	: ID: 57, E-ID: 7, M-ID: 5, Type: Casual, From: 21/09/2020, To: 21/09/2020, Status: Approved
+21-09-2020 15:45:24  LRSU	: ID: 51, E-ID: 4, M-ID: 1, Type: Earned, From: 23/09/2020, To: 23/09/2020, Status: Rejected
+21-09-2020 15:51:57  NLR	: E-ID: 6, Type: Casual, From: 07/10/2020, To: 07/10/2020
+21-09-2020 15:55:19  LRSU	: ID: 58, E-ID: 6, M-ID: 5, Type: Casual, From: 07/10/2020, To: 07/10/2020, Status: Approved
+21-09-2020 16:06:16  NLR	: E-ID: 6, Type: Casual, From: 09/10/2020, To: 09/10/2020
+21-09-2020 16:06:41  LRSU	: ID: 59, E-ID: 6, M-ID: 5, Type: Casual, From: 09/10/2020, To: 09/10/2020, Status: Approved
+21-09-2020 16:08:33  LRSU	: ID: 47, E-ID: 2, M-ID: 1, Type: Casual, From: 30/09/2020, To: 30/09/2020, Status: Rejected
+21-09-2020 17:45:05  NLR	: E-ID: 2, Type: Casual, From: 22/09/2020, To: 22/09/2020
+21-09-2020 17:46:11  LRSU	: ID: 60, E-ID: 2, M-ID: 1, Type: Casual, From: 22/09/2020, To: 22/09/2020, Status: Approved
+21-09-2020 17:49:00  NLR	: E-ID: 2, Type: Casual, From: 01/10/2020, To: 06/10/2020
+21-09-2020 17:49:26  LRSU	: ID: 61, E-ID: 2, M-ID: 1, Type: Casual, From: 01/10/2020, To: 06/10/2020, Status: Approved
+21-09-2020 17:50:55  NLR	: E-ID: 2, Type: Casual, From: 23/09/2020, To: 24/09/2020

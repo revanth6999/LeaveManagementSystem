@@ -1,0 +1,23 @@
+<div class="mat-title">My leave requests</div>
+<mat-accordion *ngIf="totalRequests > 0">
+    <mat-expansion-panel class="{{leave.status}}" *ngFor="let leave of leaves">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+            <strong>{{leave.fromDate + " - " + leave.toDate}}</strong>
+            </mat-panel-title>            
+            <mat-panel-description>
+                {{leave.type}}
+            </mat-panel-description>
+            <mat-icon *ngIf="leave.status == 'Approved'">sentiment_satisfied_alt</mat-icon>
+            <mat-icon *ngIf="leave.status == 'Rejected'">sentiment_dissatisfied</mat-icon>
+        </mat-expansion-panel-header>
+        <div class="panel-body">
+            <p style="text-align:justify" class="mat-subheading-1">
+                {{leave.reason}}
+            </p>
+        </div>
+    </mat-expansion-panel>
+</mat-accordion>
+<div *ngIf="totalRequests < 1" class="mat-headline">Sorry! You don't have a leave history<br><br>
+    <button id="dashboardBtn" mat-raised-button [routerLink]="['/dashboard']" color="primary">Go to dashboard</button>
+</div>

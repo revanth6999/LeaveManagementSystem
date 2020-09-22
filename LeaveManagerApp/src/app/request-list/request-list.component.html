@@ -1,0 +1,30 @@
+<div id="title" class="mat-title">Pending requests</div>
+<mat-accordion *ngIf="totalRequests > 0">
+    <mat-expansion-panel *ngFor="let i of keys">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                {{users[i].firstName + " " + users[i].lastName}}
+            </mat-panel-title>
+            <mat-panel-description>
+                {{leaves[i].type}}
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="panel-body">
+            <div class="mat-title">
+                <mat-icon>calendar_today</mat-icon>
+                {{leaves[i].fromDate + " - " + leaves[i].toDate}}                 
+            </div>
+            <p style="text-align:justify" class="mat-subheading-1">
+                {{leaves[i].reason}}
+            </p>
+        </div>
+        <mat-action-row>
+            <button class="btn-approve" (click)="approve(leaves[i])" mat-raised-button>Approve</button>
+            <button class="btn-reject" (click)="reject(leaves[i])" mat-raised-button>Reject</button>
+        </mat-action-row>
+    </mat-expansion-panel>
+</mat-accordion>
+<div *ngIf="totalRequests < 1" class="mat-headline">Cheers! There are no pending leave requests<br><br>
+    <button id="dashboardBtn" mat-raised-button [routerLink]="['/dashboard']" color="primary">Go to dashboard</button>
+</div>
+

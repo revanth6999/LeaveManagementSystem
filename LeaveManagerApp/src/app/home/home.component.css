@@ -1,0 +1,14 @@
+.welcome {
+    position: relative;          
+    display: inline-block;       
+    left: 50%;                 
+    transform: translate(-50%);
+}
+
+.welcome-container {
+    margin: 10rem;
+}
+
+button {
+    margin: 0.5rem;
+}
